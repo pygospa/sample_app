@@ -1,7 +1,10 @@
+<!-- Call Rails builtin provide function and associate String 'Home' with label :title -->
+<% provide(:title, 'Home') %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on Rails Tutorial Sample App | Home</title>
+    <!-- Call Rails builtin yield function to insert :title value -->
+    <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
   </head>
   <body>
     <h1>Sample App</h1>
