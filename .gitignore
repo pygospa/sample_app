@@ -11,7 +11,7 @@
 /tmp
 
 # Database setup
-database.yml
+#database.yml
 
 # Secret token
 .secret
