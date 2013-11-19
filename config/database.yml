@@ -1,4 +1,4 @@
-common: &common
+common: &db
   adapter: postgresql
   encoding: unicode
   host: localhost
@@ -7,9 +7,9 @@ common: &common
   password: VZz4AP6Q
 
 development:
-  <<: *common
+  <<: *db
   database: sample_app_development
 
 test:
-  <<: *common
+  <<: *db
   database: sample_app_test
