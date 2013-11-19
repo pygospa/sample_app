@@ -6,9 +6,9 @@ ruby '2.0.0'
 gem 'rails', '4.0.1'		            # Rails version
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'pg', '0.17.0'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'            # Sqlite3 as DB in development
   gem 'rspec-rails', '2.13.1'
   gem 'guard-rspec', '2.5.0'
 
@@ -36,6 +36,5 @@ group :doc do
 end                                 # under doc/api
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
